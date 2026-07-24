@@ -1,0 +1,28 @@
+print("Simple Calculator")
+print("----------------")
+
+num1 = float(input("Enter first number: "))
+operator = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter second number: "))
+
+if operator == "+":
+    result = num1 + num2
+    print("Answer:", result)
+
+elif operator == "-":
+    result = num1 - num2
+    print("Answer:", result)
+
+elif operator == "*":
+    result = num1 * num2
+    print("Answer:", result)
+
+elif operator == "/":
+    if num2 != 0:
+        result = num1 / num2
+        print("Answer:", result)
+    else:
+        print("Cannot divide by zero")
+
+else:
+    print("Invalid operator")
